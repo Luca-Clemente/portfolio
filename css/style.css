@@ -1,0 +1,286 @@
+/*Color scheme*/
+:root {
+  --main-black: #181717;
+  --bg-grey: #f3f3f3;
+  --secondary: #2429af;
+  --main-grey: #424242;
+}
+/*Reset - Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  background-color: var(--bg-grey);
+}
+/*Header*/
+header {
+  display: flex;
+  max-width: 1121px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+}
+header a {
+  text-decoration: none;
+  font-family: "Dm Sans", sans-serif;
+  line-height: 1.3;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--main-black);
+}
+.navigation-bar {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.navigation-bar a {
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.3;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--main-black);
+  padding: 0.6rem 0rem;
+  letter-spacing: -0.03em;
+}
+.navigation-bar a:hover {
+  text-decoration: underline;
+}
+/*Main content - about me*/
+.introduction-about-me {
+  max-width: 1121px;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+.about-me-text {
+  display: flex;
+  align-items: flex-end;
+  gap: 6rem;
+}
+.about-me-text h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--main-black);
+}
+.about-me-text p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: var(--main-grey);
+}
+svg {
+  margin-top: 5rem;
+  height: 38px;
+}
+/*Main content - works*/
+.work {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding-top: 7.5rem;
+}
+.work-item {
+  padding-top: 7.5rem;
+  display: flex;
+  align-items: center;
+}
+.work-item h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: var(--main-black);
+}
+.software {
+  color: var(--main-grey);
+}
+.work-item p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--main-black);
+  margin-top: 1rem;
+}
+.work-item a {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: var(--main-black);
+  text-decoration: none;
+  padding: 0.5rem 0rem;
+}
+.work-item a:hover {
+  text-decoration: underline;
+}
+hr {
+  margin-top: 5rem;
+  color: var(--main-grey);
+}
+/*Footer*/
+footer {
+  max-width: 1124px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+}
+footer h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  color: var(--secondary);
+}
+footer a {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  text-decoration: none;
+  color: var(--main-black);
+}
+footer a:last-of-type {
+  margin-left: 1rem;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*about-me*/
+.about-me {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+.about-me h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  max-width: 544px;
+  color: var(--main-black);
+}
+.about-me p {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-top: 1.3rem;
+  color: var(--main-grey);
+  max-width: 544px;
+}
+.about-me-container {
+  display: flex;
+  gap: 2rem;
+}
+/*knowledge*/
+.knowledge {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+.knowledge-item {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.knowledge-item h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--main-black);
+  margin-top: 1rem;
+}
+.knowledge-item h2:hover {
+  text-decoration: underline;
+}
+.knowledge-item p {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+/*Contato*/
+.contact {
+  max-width: 1124px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+}
+.contact h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--main-black);
+}
+.contact p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--main-black);
+}
+.contact a {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--main-grey);
+  margin-top: 1rem;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
