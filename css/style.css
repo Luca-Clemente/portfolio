@@ -52,11 +52,13 @@ h6 {
 body {
   background-color: var(--bg-grey);
 }
+.wrapper{
+  max-width: 1124px;
+  margin: 0 auto;
+}
 /*Header*/
 header {
   display: flex;
-  max-width: 1121px;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   padding-top: 5rem;
@@ -90,8 +92,6 @@ header a {
 }
 /*Main content - about me*/
 .introduction-about-me {
-  max-width: 1121px;
-  margin: 0 auto;
   padding-top: 10rem;
 }
 .about-me-text {
@@ -119,8 +119,6 @@ svg {
 }
 /*Main content - works*/
 .work {
-  max-width: 1124px;
-  margin: 0 auto;
   padding-top: 7.5rem;
 }
 .work-item {
@@ -164,8 +162,6 @@ hr {
 }
 /*Footer*/
 footer {
-  max-width: 1124px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 4rem 0rem;
@@ -194,8 +190,6 @@ footer a:hover {
 
 /*about-me*/
 .about-me {
-  max-width: 1124px;
-  margin: 0 auto;
   padding-top: 10rem;
 }
 .about-me h1 {
@@ -223,8 +217,6 @@ footer a:hover {
 }
 /*knowledge*/
 .knowledge {
-  max-width: 1124px;
-  margin: 0 auto;
   padding-top: 5rem;
 }
 .knowledge-item {
@@ -251,8 +243,6 @@ footer a:hover {
 }
 /*Contato*/
 .contact {
-  max-width: 1124px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -272,15 +262,4 @@ footer a:hover {
   letter-spacing: -0.03em;
   color: var(--main-black);
 }
-.contact a {
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  line-height: 1.3;
-  letter-spacing: -0.03em;
-  color: var(--main-grey);
-  margin-top: 1rem;
-  text-decoration: none;
-}
-.contact a:hover {
-  text-decoration: underline;
-}
+
