@@ -109,6 +109,7 @@ header a {
   letter-spacing: -0.03em;
   color: var(--main-black);
 }
+
 .about-me-text p {
   font-family: "DM Sans", sans-serif;
   font-size: clamp(1em + 1vw, 1.25em + 1vw, 2em);
@@ -118,6 +119,7 @@ header a {
 svg {
   margin-top: 5rem;
   height: 38px;
+  animation: arrow-animation 0.3s infinite alternate-reverse;
 }
 /*Main content - works*/
 .work {
@@ -318,5 +320,13 @@ footer a:hover {
   footer {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+}
+@keyframes arrow-animation {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
